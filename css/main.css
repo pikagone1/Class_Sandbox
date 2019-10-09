@@ -15,6 +15,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /*
@@ -97,120 +98,144 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-nav{
+
+/* ==========================================================================
+   Begin Header Styles
+   ========================================================================== */
+
+header{
+  background-color: #93DFCB;
   min-height: 100px;
-  background-color: #303030;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
 }
 
-nav a{
-  Color: #ffffff;
-  font-size: 20px;
+.navbar{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
+
+.navbar a{
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  margin: 6px;
   text-decoration: none;
 }
 
-
-nav a:hover{
-  Color: pink;
-  font-size: 30px;
-  text-decoration: underline;
-}
-
-.Hero{
-  min-height: 100vh;
-  background-image: url("../img/mypic.jpg");
-  }
-
-
-.InfoSection{
-  display: flex;
-  justify-content: center;
-  Margin: auto;
-  padding: 30px;
-
-
-}
-main{
-  width: 50%;
-  padding: 15px;
-}
-
-aside{
-  width: 30%;
-  padding: 15px;
-  border-left: 2px #000 dotted;
-}
-
-footer{
-  height: 100px;
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-footer p{
+.navbar a:hover{
   color: #fff;
 }
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
+.mobile_nav_icon{
+  display: none;
+}
 
 .hidden {
   display: none !important;
 }
 
-/*
-* Hide only visually, but have it available for screen readers:
-* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-*
-* 1. For long content, line feeds are not interpreted as spaces and small width
-*    causes content to wrap 1 word per line:
-*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-*/
+/* End Header Styles */
+/* Begin Hero Section */
 
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+.Hero{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-image: url('../img/MyBackgroundImage.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: none;
+}
+.hero_cta{
+  text-align: center;
+}
+.hero_cta h1{
+  font-size: 50px;
+  color: #fff;
+  font-weight: 400;
 }
 
-/*
-* Extends the .sr-only class to allow the element
-* to be focusable when navigated to via the keyboard:
-* https://www.drupal.org/node/897638
-*/
+  /* End Hero Section */
 
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+/* Begin CTA Section */
+
+
+.CTA_Section{
+  background-color: #EEF5EA;
+  padding: 10px;
 }
 
-/*
-* Hide visually and from screen readers, but maintain layout
-*/
+.Sectionbox{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  margin: 0 auto;
 
-.invisible {
-  visibility: hidden;
 }
 
+
+#CTA1,
+#CTA2,
+#CTA3{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: top;
+  text-align: center;
+  margin: 10px;
+
+}
+/* End CTA Section */
+
+/* Begin Leadership Section */
+
+
+.Leadership_Section{
+  background-color: #FBFFFE;
+  padding: 10px;
+}
+
+/* End Leadership Section */
+
+/* Begin Info Section */
+
+.Info_Section{
+  background-color: #FCFFF5;
+  padding: 10px;
+}
+
+/* End Info Section */
+
+/* Begin Footer Section */
+
+footer{
+  background-color: #93DFCB;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+footer p{
+  color: #fff;
+  font-size: 26px;
+  font-weight: 300;
+}
+
+/* End Footer Section */
 /*
 * Clearfix: contain floats
 *
