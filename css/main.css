@@ -169,19 +169,19 @@ header{
 /* Begin CTA Section */
 
 
-.CTA_Section{
+.CTA_section{
   background-color: #EEF5EA;
   padding: 10px;
 }
 
-.Sectionbox{
+.sectionbox{
   width: 80%;
   display: flex;
   justify-content: space-between;
-  align-items: top;
+  align-items: flex-start;
   margin: 0 auto;
-
 }
+
 
 
 #CTA1,
@@ -191,7 +191,7 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: top;
+  align-items: center;
   text-align: center;
   margin: 10px;
 
@@ -204,8 +204,28 @@ header{
 .Leadership_Section{
   background-color: #FBFFFE;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
+.sectionbox_leadership h2{
+ text-shadow: 2px 2px #dadada;
+
+}
+
+.asterik_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.title{
+  font-weight: 700;
+}
 /* End Leadership Section */
 
 /* Begin Info Section */
@@ -215,6 +235,9 @@ header{
   padding: 10px;
 }
 
+.buffer{
+  margin: 2rem;
+}
 /* End Info Section */
 
 /* Begin Footer Section */
@@ -236,6 +259,36 @@ footer p{
 }
 
 /* End Footer Section */
+/* on screens that are 768px or less, use these styles*/
+@media screen and (max-width:768px) {
+
+.sectionbox{
+  width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  }
+
+  .buffer p{
+    text-align: center;
+  }
+
+
+  .buffer h2{
+  text-align: center;
+  }
+
+  .mobile_nav_icon{
+    display: block;
+    font-size: 30px;
+  }
+
+  nav{
+    display: none;
+  }
+}
+
 /*
 * Clearfix: contain floats
 *
